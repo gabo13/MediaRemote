@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win32 remote</title>
+</head>
+<style>
+    * {
+        background-color : grey;
+        color : black;
+    }
+    h1 {
+        text-align : center;
+    }
+    .button {
+        color : black;
+        background-color : darkgrey;
+        display : inline-block;
+        font-size: 30px;
+        margin : 10px;
+        padding : 10px;
+        //width : 40%;
+        border-radius : 30px;
+
+    }
+    .button2 {
+        width : 95%;
+        horizontal-align : middle;
+    }
+    #sd {
+        color : black;
+        background-color : red;
+    }
+
+</style>
+
+<body>
+    <h1>Távirányító</h1>
+    <form id="form1" method="post" action="/">
+        <div>
+        <input class="button" type="submit" value="VOL-" name="volume"/>
+        <input class="button" type="submit" value="VOL+" name="volume"/>
+        </div>
+        <br>
+
+        <input class="button button2" type="submit" value="MUTE" name="volume"/>
+        <br>
+
+        <input class="button button2" type="submit" value="PALAY/PAUSE" name="control"/>
+        <br>
+        <br>
+        <input class="button button2" type="submit" value="SPACE" name="control"/>
+        <input class="button" type="submit" value="F" name="control"/>
+        <input class="button" type="submit" value="ALT+ENTER" name="control"/>
+        <br>
+        <input class="button" type="submit" value="<" name="control"/>
+        <input class="button" type="submit" value=">" name="control"/>
+        <br>
+        <input id="sd" class="button" onclick="return confirm('Biztosan ki akarod kapcsolni?')" type="submit" value="shutdown" name="control"/>
+    </form>
+</body>
+</html>

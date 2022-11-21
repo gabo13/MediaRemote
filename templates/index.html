@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win32 remote</title>
+    <style>
+        * {
+            background-color : grey;
+            color : black;
+        }
+        h1 {
+            text-align : center;
+        }
+        .button {
+            color : black;
+            background-color : darkgrey;
+            font-size: 50px;
+            display : inline-block;
+            font-size: 30px;
+            margin : 10px;
+            padding : 15px;
+            border-radius : 45%;
+    
+        }
+        #sd {
+            color : black;
+            background-color : red;
+        }
+    
+    </style>
+</head>
+
+
+<body>
+
+    <form id="form1" method="post" action="/">
+        <input id="b1" class="button" onmousedown="mouseDown()" onmouseup="mouseUp()" type="submit" value="VOL-" name="volume"/>
+        <input class="button" type="submit" value="VOL+" name="volume"/>
+        <input class="button" type="submit" value="MUTE" name="volume"/>
+        <br>
+        <input class="button" type="submit" value="&#8592" name="control"/>
+        <input class="button" type="submit" value="&#8594" name="control"/>
+        <input class="button" type="submit" value="&#8593" name="control"/>
+        <input class="button" type="submit" value="&#8595" name="control"/>
+        <br>
+        <input class="button" type="submit" value="F" name="control"/>
+        <input class="button" type="submit" value="ALT+ENTER" name="control"/>
+        <br>
+        <!-- <input type="image" src="../static/arrow-left.png" alt="Submit" width="48" height="48" name="control" value="&#8592" onclick="click(this)"> -->
+        
+        <input class="button" type="submit" value="PLAY/PAUSE" name="control"/>
+        <input class="button" type="submit" value="SPACE" name="control"/>
+        <br>
+        <input id="sd" class="button" onclick="return confirm('Biztosan ki akarod kapcsolni?')" type="submit" value="OFF" name="control"/>
+    </form>
+    <script>
+        function click(elem) {
+            elem.
+            alert("Alert");
+        }
+    </script>
+</body>
+</html>
